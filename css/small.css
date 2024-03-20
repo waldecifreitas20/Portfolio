@@ -1,0 +1,13 @@
+@media (min-width: 576px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

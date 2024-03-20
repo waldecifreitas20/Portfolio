@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@100&family=Lobster&family=Mochiy+Pop+P+One&family=Pacifico&family=Sen:wght@400..800&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-
+/* Variables settings */
 :root {
 
-    --color-bg: rgb(53, 23, 73);
+    --color-bg: rgb(247, 247, 247);
 
     --color-primary: #fc62da;
-    --color-primary-dark: #99007f;
+    --color-primary-light: rgb(255, 148, 232);
+    --color-primary-dark: #b60398;
 
     --color-secondary: #d65981;
     --color-tertiary: #f88d87;
@@ -26,11 +22,36 @@
 }
 
 
-.container {
+/* Reset browser presets */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Generic classes */
+.container, 
+section {
     width: 90%;
     margin: 0 auto;
 }
 
+.dispose {
+    display: none;
+}
+
+.slide-left {
+    left: -100vw;
+}
+
+.reset-slide {
+    left: 0;
+}
+
+
+.btn:active {
+    scale: .9;
+}
 a {
     text-decoration: none;
 }
@@ -39,36 +60,59 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 2em;
+}
+
+/* -------------------------------- */
+
 html,
 body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-
+    
     font-family: 'Sen', 'Trebuchet MS', sans-serif;
     font-size: var(--font-size);
-
+    
     background-size: cover;
-
+    
     color: var(--color-primary);
-
+    
     background: var(--color-bg);
 }
 
+/* EXTRA SMALL DEVICES SETTINGS */
 
-#navbar nav {
+header {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+#navbar {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 
-nav ul {
-    display: flex;
-    width: 25%;
+#navbar #menu {
+    height: 100vh;
+    width: 100vw;
+    
+    position: absolute;
+    top: 81px;
+   
 
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-bg);
+    
+    transition: all 700ms;
+
+    font-size: 1.5em;
+    line-height: 4em;
 }
 
 nav a {
