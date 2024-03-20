@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@100&family=Lobster&family=Mochiy+Pop+P+One&family=Pacifico&family=Sen:wght@400..800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,24 +7,29 @@
 }
 
 :root {
-    --color-primary : rgb(26, 3, 68);
-    --color-shadow : rgba(0, 0, 0, 0.452);
-    --color-text-hover : rgb(235, 231, 8);
-    --navbar-height : 60px;
+    --color-primary: #b76e79;
+    --color-secondary: #ffd700;
+    --color-shadow: rgba(0, 0, 0, 0.452);
+    --color-text-hover: rgb(235, 231, 8);
+
+
+    --purple: #d9c0f9;
+    --salmon: #fbcdc7;
+    --pink: #fac3e4;
+    --lighter-blue: #d4f2e3;
+    --light-blue: #bbe3eb;
+
+    --font-size: 18px;
 }
 
-ul {
-    list-style: none;
-}
 
+
+html,
 body {
-    background-size: cover;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-}
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 
-#self-img {
-    width: 300px;
-    border: 1px solid red;
-
-    border-radius: 100%;
+    font-family: 'Sen', 'Trebuchet MS', sans-serif;
+    font-size: var(--font-size);
 }
