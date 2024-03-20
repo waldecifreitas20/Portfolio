@@ -7,28 +7,27 @@
 }
 
 :root {
-    --purple: #d9c0f9;
-    --salmon: #fbcdc7;
-    --pink: #fac3e4;
-    --lighter-blue: #d4f2e3;
-    --light-blue: #bbe3eb;
 
+    --color-bg: rgb(53, 23, 73);
 
-    --color-primary: var(--lighter-blue);
-    --color-secondary: var(--salmon);
+    --color-primary: #fc62da;
+    --color-primary-dark: #99007f;
+
+    --color-secondary: #d65981;
+    --color-tertiary: #f88d87;
 
     --color-shadow: rgba(0, 0, 0, 0.452);
-    --color-text-hover: var(--pink);
+    --color-text: rgb(249, 249, 249);
 
     --font-size: 18px;
     --border-radius: 0.5em;
-    
+
     --box-padding: 10px;
 }
 
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -49,18 +48,37 @@ body {
     font-family: 'Sen', 'Trebuchet MS', sans-serif;
     font-size: var(--font-size);
 
-    background-color: var(--color-primary);
+    background-size: cover;
+
+    color: var(--color-primary);
+
+    background: var(--color-bg);
 }
 
-#navbar {
-    background-color: var(--color-secondary);
-}
 
 #navbar nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 nav ul {
     display: flex;
+    width: 25%;
+
+    justify-content: space-between;
+}
+
+nav a {
+    color: var(--color-primary);
+    font-weight: 600;
+
+    transition: all 100ms;
+}
+
+nav a:hover {
+    color: var(--color-primary-dark);
+
 }
