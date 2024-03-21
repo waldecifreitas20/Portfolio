@@ -95,8 +95,6 @@ h1 {
 html,
 body {
     height: 100vh;
-    width: 100vw;
-    /* overflow-x: hidden; */
 
     font-family: 'Sen', 'Trebuchet MS', sans-serif;
     font-size: var(--font-size);
