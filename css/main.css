@@ -16,7 +16,7 @@
     --color-text: rgb(249, 249, 249);
 
     --font-size: 18px;
-    --border-radius: 0.5em;
+    --border-radius: 0.25em;
 
     --box-padding: 10px;
 }
@@ -118,13 +118,13 @@ header {
     align-items: center;
 }
 
-#navbar #drawer #menu {
+#drawer #menu {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#navbar #drawer .disposer.btn {
+#drawer .disposer.btn {
     display: block;
     float: right;
     border: none;
@@ -132,8 +132,20 @@ header {
     color: var(--color-primary);
 }
 
-#navbar #drawer .disposer:hover {
+#drawer .disposer:hover {
     color: var(--color-primary-dark);
+}
+
+#drawer #menu #hire-me {
+    color: var(--color-secondary);
+    border: 1px solid transparent;
+    padding: var(--box-padding);
+    border-radius: var(--border-radius);
+}
+
+#drawer #menu #hire-me:hover {
+    border: 1px solid;
+    
 }
 
 nav a {
