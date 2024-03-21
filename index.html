@@ -27,18 +27,27 @@
                 </label>
                 <input type="checkbox" id="menu-toggler" class="dispose">
 
-                <ul id="menu" class="slide-left">
-                    <li><a class="disposer" href="#about">Sobre</a></li>
-                    <li><a class="disposer" href="#projects">Projetos</a></li>
-                    <li><a class="disposer" href="#contact">Contato</a></li>
-                </ul>
+                <div id="drawer" class="slide-left">
+                    <span class="disposer btn">
+                        <i class="fa-solid fa-xmark fa-xl"></i>
+                    </span>
+                    <ul id="menu">
+                        <li><a class="disposer" href="#about">Sobre</a></li>
+                        <li><a class="disposer" href="#projects">Projetos</a></li>
+                        <li><a class="disposer" href="#contact">Contato</a></li>
+                        <li><a class="disposer" href="#contact">Contrate-me</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
         <section id="home">
             <article>
-                <h1>Olá! Eu sou Waldeci Freitas </h1>
-                <h2>Desenvolvedor Front-end <span class="">|</span></h2>
+                <h1>
+                    Olá,<br> 
+                    Eu sou Waldeci!
+                    <span>Desenvolvedor Front-end</span>
+                </h1>
 
                 <div>
                     <a href="">Linkedin</a>
@@ -49,6 +58,7 @@
 
             <article>
                 <img id="self-img" src="./images/me-v2.png" alt="">
+                <button id="cv-download">Baixar CV</button>
             </article>
 
         </section>
@@ -61,6 +71,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error alias distinctio, itaque sunt
                 tenetur possimus praesentium deleniti dolores vero voluptatem nam provident ad officiis labore hic, illo
                 obcaecati amet.</p>
+
         </section>
 
         <section id="projects">

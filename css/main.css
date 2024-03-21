@@ -3,14 +3,14 @@
 /* Variables settings */
 :root {
 
-    --color-bg: rgb(247, 247, 247);
+    --color-bg: rgba(0, 0, 0, 0.9);
 
-    --color-primary: #fc62da;
+    --color-primary: #FF00D6;
     --color-primary-light: rgb(255, 148, 232);
     --color-primary-dark: #b60398;
 
-    --color-secondary: #d65981;
-    --color-tertiary: #f88d87;
+    --color-secondary: #00FF47;
+    --color-tertiary: white;
 
     --color-shadow: rgba(0, 0, 0, 0.452);
     --color-text: rgb(249, 249, 249);
@@ -27,10 +27,11 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 /* Generic classes */
-.container, 
+.container,
 section {
     width: 90%;
     margin: 0 auto;
@@ -52,6 +53,7 @@ section {
 .btn:active {
     scale: .9;
 }
+
 a {
     text-decoration: none;
 }
@@ -70,16 +72,16 @@ html,
 body {
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
-    
+    /* overflow-x: hidden; */
+
     font-family: 'Sen', 'Trebuchet MS', sans-serif;
     font-size: var(--font-size);
-    
+
     background-size: cover;
-    
+
     color: var(--color-primary);
-    
-    background: var(--color-bg);
+
+    background: url("../images/bg2.png") no-repeat, var(--color-bg);
 }
 
 /* EXTRA SMALL DEVICES SETTINGS */
@@ -93,26 +95,45 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-#navbar #menu {
+#navbar #drawer {
     height: 100vh;
     width: 100vw;
-    
-    position: absolute;
-    top: 81px;
-   
+    padding: 40px;
+
+    position: fixed;
+    top: 0px;
+
+    background: var(--color-bg);
+
+    transition: all 700ms;
+
+    font-size: 1.5em;
+    line-height: 3em;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--color-bg);
-    
-    transition: all 700ms;
+}
 
-    font-size: 1.5em;
-    line-height: 4em;
+#navbar #drawer #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar #drawer .disposer.btn {
+    display: block;
+    float: right;
+    border: none;
+    background: none;
+    color: var(--color-primary);
+}
+
+#navbar #drawer .disposer:hover {
+    color: var(--color-primary-dark);
 }
 
 nav a {
