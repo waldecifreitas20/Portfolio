@@ -21,22 +21,22 @@
             <nav id="navbar" class="container">
                 <img id="logo" src="./images/logo-color.png" height="40px" alt="">
 
-                <label id="btn-menu" class="btn" for="menu-toggler">
+                <label id="btn-menu" class="clickable" for="menu-toggler">
                     <i class="fa-solid fa-bars fa-xl"></i>
                 </label>
                 <input type="checkbox" id="menu-toggler" class="dispose">
 
                 <div id="drawer" class="slide-left">
 
-                    <span class="disposer btn">
+                    <span class="disposer clickable">
                         <i class="fa-solid fa-xmark fa-xl"></i>
                     </span>
 
                     <ul id="menu">
-                        <li><a class="disposer btn" href="#about">Sobre</a></li>
-                        <li><a class="disposer btn" href="#projects">Projetos</a></li>
-                        <li><a class="disposer btn" href="#contact">Contato</a></li>
-                        <li><a class="disposer btn" id="hire-me" href="#">Contrate-me</a></li>
+                        <li><a class="disposer clickable" href="#about">Sobre</a></li>
+                        <li><a class="disposer clickable" href="#projects">Projetos</a></li>
+                        <li><a class="disposer clickable" href="#contact">Contato</a></li>
+                        <li><a class="disposer clickable" id="hire-me" href="#">Contrate-me</a></li>
                     </ul>
 
                 </div>
@@ -47,21 +47,21 @@
         <section id="home">
             <article>
                 <h1>
-                    Olá,<br> 
-                    Eu sou Waldeci!
+                    Olá, 
+                    Eu sou Waldeci! <br>
                     <span>Desenvolvedor Front-end</span>
                 </h1>
 
-                <div>
-                    <a href="">Linkedin</a>
-                    <a href="">Github</a>
+                <div class="row">
+                    <a class="btn" href="">Linkedin</a>
+                    <a class="btn" href="">Github</a>
                 </div>
 
             </article>
 
-            <article>
-                <img id="self-img" src="./images/me-v2.png" alt="">
-                <button id="cv-download">Baixar CV</button>
+            <article id="img-block">
+                <img id="self-img" src="./images/me.png" alt="">
+                <button id="cv-download" class="btn">Baixar CV</button>
             </article>
 
         </section>

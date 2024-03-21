@@ -37,6 +37,11 @@ section {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 .dispose {
     display: none;
 }
@@ -50,7 +55,24 @@ section {
 }
 
 
-.btn:active {
+.btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    background: none;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: var(--box-padding);
+    border-radius: var(--border-radius);
+
+    transition: 200ms;
+}
+
+.btn:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.clickable:active {
     scale: .9;
 }
 
@@ -63,7 +85,9 @@ ul {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
 }
 
 /* -------------------------------- */
@@ -82,15 +106,14 @@ body {
     color: var(--color-primary);
 
     background: url("../images/bg2.png") no-repeat, var(--color-bg);
+    background-size: cover;
 }
 
 /* EXTRA SMALL DEVICES SETTINGS */
 
-header {
-    border-bottom: 1px solid var(--color-primary);
-}
-
+/* MENU */
 #navbar {
+    position: relative;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -115,6 +138,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    z-index: 2;
 }
 
 #drawer #menu {
@@ -152,7 +177,6 @@ header {
 #drawer #menu li {
     display: block;
     margin: 40px 0;
-    /* width: 100%; */
 }
 
 nav a {
@@ -168,4 +192,64 @@ nav a {
 nav a:hover {
     color: var(--color-primary-dark);
 
+}
+
+/* HOME SECTION */
+section#home {
+    position: relative;
+    min-height: 100vh;
+
+    padding-top: 280px;
+    display: block;
+    flex-direction: column;
+    justify-self: center;
+}
+
+section#home h1 span {
+    color: var(--color-primary);
+}
+
+section#home #img-block {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+section#home #self-img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid var(--color-primary);
+
+}
+
+section#home #img-block #cv-download {
+    width: 100px;
+    border: 1px solid var(--color-secondary);
+    color: #00FF47;
+}
+
+section#home #img-block #cv-download:hover {
+    background-color: #00FF47;
+    color: black;
+}
+
+
+section#home .row {
+    margin: 20px;
+    flex-direction: column;
+}
+
+section#home .row .btn {
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
 }
