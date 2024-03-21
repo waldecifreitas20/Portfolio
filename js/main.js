@@ -11,4 +11,15 @@ menuToggler.addEventListener("change", () => {
         menu.classList.replace("slide-left", "reset-slide");
     }
 
-})
+});
+
+const disposers = document.getElementsByClassName('disposer');
+
+for (const disposer of disposers) {
+    disposer.addEventListener("click", () => {
+        menuToggler.checked = false;
+
+        let event =  new CustomEvent("change");
+        menuToggler.dispatchEvent(event);
+    });
+}
