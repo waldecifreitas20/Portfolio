@@ -117,7 +117,7 @@ body {
     font-family: 'Sen', 'Trebuchet MS', sans-serif;
     font-size: var(--font-size);
 
-    color: var(--color-primary);
+    color: var(--color-tertiary);
 
     background:  url("../images/bg2.png") no-repeat right top;
 
@@ -277,5 +277,10 @@ section#home .row .btn {
 
 /* ABOUT SECTION */
 section#about {
-    background-color: black;
+    background-color: var(--color-bg);
+}
+
+section#about p {
+    text-indent: 30px;
+    margin: 10px 0;
 }
