@@ -30,10 +30,11 @@
 }
 
 /* Generic classes */
-.container,
-section {
+.container {
     width: 90%;
     margin: 0 auto;
+
+    position: relative;
 }
 
 .row {
@@ -98,6 +99,11 @@ h1 {
     color: white;
     text-align: center;
 }
+
+section {
+    padding: 50px 30px;
+}
+
 
 /* -------------------------------- */
 
@@ -187,43 +193,40 @@ nav a:hover {
 
 }
 
+
 /* HOME SECTION */
 section#home {
     position: relative;
-   
     height: 100vh;
-
     padding-top: 300px;
-    display: block;
-    flex-direction: column;
-    justify-self: center;
 }
 
 section#home h1 span {
     color: var(--color-primary);
 }
 
+
 section#home #img-block {
     position: absolute;
-    top: 0;
-    width: 100%;
+    top: 0px;
+    left: 0vw;
     height: 270px;
-    
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 section#home #img-block #self-img,
 section#home #img-block #cv-download {
     width: 200px;
+    margin: 0 auto;
 }
 
 section#home #img-block #self-img {
     display: block;
-    margin: 0 auto;
     border-radius: 100%;
     border: 1px solid var(--color-primary);
 
@@ -257,4 +260,12 @@ section#home .row .btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* ABOUT SECTION */
+section#about {
+    background-color: black;
+
+    
 }
