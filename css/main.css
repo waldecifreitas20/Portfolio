@@ -19,7 +19,7 @@
 
     --box-padding: 10px;
 
-    --navbar-height : 80px;
+    --navbar-height: 80px;
 }
 
 
@@ -72,7 +72,8 @@
     color: black;
 }
 
-.btn, .clickable {
+.btn,
+.clickable {
     cursor: pointer;
 }
 
@@ -83,7 +84,7 @@
 
 .clickable:active {
     scale: .95;
-    
+
 }
 
 .opened-menu {
@@ -118,7 +119,9 @@ body {
 
     color: var(--color-primary);
 
-    background: url("../images/bg2.png") no-repeat, var(--color-bg);
+    background:  url("../images/bg2.png") no-repeat right top;
+
+    background-size: auto calc(100vh+ var(--navbar-height));
 }
 
 /* EXTRA SMALL DEVICES SETTINGS */
@@ -264,9 +267,9 @@ section#home .row {
 section#home .row .btn {
     width: 250px;
     height: 70px;
-    margin: 10px auto; 
+    margin: 10px auto;
     padding: var(--box-padding) 15px;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -275,7 +278,5 @@ section#home .row .btn {
 
 /* ABOUT SECTION */
 section#about {
-    background-color: black;    
+    background-color: black;
 }
-
-
