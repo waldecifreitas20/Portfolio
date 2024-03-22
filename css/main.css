@@ -3,7 +3,7 @@
 /* Variables settings */
 :root {
 
-    --color-bg: rgb(17, 17, 17,.96);
+    --color-bg: rgba(0, 0, 0, 0.9);
 
     --color-primary: #00fff2;
     --color-primary-dark: #0abdca;
@@ -128,10 +128,8 @@ body {
 /* MENU */
 header {
     height: 80px;
-    position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--color-bg);
     z-index: 3;
 }
 
@@ -209,7 +207,7 @@ nav a:hover {
 
 /* HOME SECTION */
 section#home {
-    margin-top: var(--navbar-height);
+    /* margin-top: var(--navbar-height); */
     position: relative;
     height: 100vh;
     padding-top: 300px;
