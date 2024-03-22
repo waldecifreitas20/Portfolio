@@ -121,7 +121,7 @@ body {
 
     background:  url("../images/bg2.png") no-repeat right top;
 
-    background-size: auto calc(100vh+ var(--navbar-height));
+    background-size: auto calc(100vh + 80px);
 }
 
 /* EXTRA SMALL DEVICES SETTINGS */
@@ -208,7 +208,6 @@ nav a:hover {
 
 /* HOME SECTION */
 section#home {
-    /* margin-top: var(--navbar-height); */
     position: relative;
     height: 100vh;
     padding-top: 300px;
