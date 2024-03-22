@@ -1,14 +1,16 @@
 const menu = document.getElementById("drawer");
-
+const body = document.querySelector("body");
 const menuToggler = document.getElementById("menu-toggler");
 
 menuToggler.addEventListener("change", () => {
-    let isMenuHidden = !menuToggler.checked;
+    let isMenuClosed = !menuToggler.checked;
 
-    if (isMenuHidden) {
+    if (isMenuClosed) {
         menu.classList.replace("reset-slide", "slide-left");
+        body.classList.remove("opened-menu");
     } else {
         menu.classList.replace("slide-left", "reset-slide");
+        body.classList.add("opened-menu");
     }
 
 });
@@ -23,3 +25,4 @@ for (const disposer of disposers) {
         menuToggler.dispatchEvent(event);
     });
 }
+
