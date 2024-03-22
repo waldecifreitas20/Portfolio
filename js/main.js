@@ -1,28 +1,52 @@
-const menu = document.getElementById("drawer");
-const body = document.querySelector("body");
+
 const menuToggler = document.getElementById("menu-toggler");
 
-menuToggler.addEventListener("change", () => {
-    let isMenuClosed = !menuToggler.checked;
+(
+    /* TOGGLE MENU VIEW */
+    function () {
 
-    if (isMenuClosed) {
-        menu.classList.replace("reset-slide", "slide-left");
-        body.classList.remove("opened-menu");
-    } else {
-        menu.classList.replace("slide-left", "reset-slide");
-        body.classList.add("opened-menu");
+        const menu = document.getElementById("drawer");
+        const body = document.querySelector("body");
+
+        menuToggler.addEventListener("change", () => {
+            const mustCloseMenu = !menuToggler.checked;
+
+            if (mustCloseMenu) {
+                closeMenu(menu, body);
+            } else {
+                openMenu(menu, body);
+            }
+
+        });
+
+        function openMenu(menu, body) {
+            menu.classList.replace("close-aside-menu", "open-aside-menu");
+            body.classList.add("opened-menu");
+        }
+
+        function closeMenu(menu, body) {
+            menu.classList.replace("open-aside-menu", "close-aside-menu");
+            body.classList.remove("opened-menu");
+        }
     }
+)();
 
-});
+(
+    /* DISPOSE MENU WHEN ITEMS ARE CLICKED */
+    function () {
+        const menuDisposers = document.getElementsByClassName('disposer');
 
-const disposers = document.getElementsByClassName('disposer');
+        for (const disposer of menuDisposers) {
 
-for (const disposer of disposers) {
-    disposer.addEventListener("click", () => {
-        menuToggler.checked = false;
+            disposer.addEventListener("click", () => {
+                menuToggler.checked = false;
 
-        let event =  new CustomEvent("change");
-        menuToggler.dispatchEvent(event);
-    });
-}
+                let event = new CustomEvent("change");
+                menuToggler.dispatchEvent(event);
+            });
+        }
+
+    }
+)();
+
 

@@ -46,11 +46,11 @@
     display: none;
 }
 
-.slide-left {
+.close-aside-menu {
     left: -100vw;
 }
 
-.reset-slide {
+.open-aside-menu {
     left: 0;
 }
 
