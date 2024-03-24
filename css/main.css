@@ -282,5 +282,9 @@ section#about {
 
 section#about p {
     text-indent: 30px;
+    text-align: justify;
     margin: 10px 0;
+
 }
+
+/* PROJECTS SECTION */
