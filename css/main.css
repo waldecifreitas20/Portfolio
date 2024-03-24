@@ -141,6 +141,10 @@ header {
     align-items: center;
 }
 
+#navbar #btn-menu {
+    color: var(--color-primary);
+}
+
 #navbar #drawer {
     height: 100vh;
     width: 100vw;
