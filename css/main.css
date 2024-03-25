@@ -127,11 +127,11 @@ body {
 
     color: var(--color-tertiary);
 
-    background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.418), rgb(0, 0, 0)), url("../images/bg2.png") no-repeat right top;
+    background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)), url("../images/bg2.png") no-repeat right top;
     width: 100vw;
     background-size: auto calc(100vh + 80px);
 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* EXTRA SMALL DEVICES SETTINGS */
@@ -245,14 +245,16 @@ section#home p {
 
 #home .row {
     margin: 20px;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section#home .row .btn {
-    /* width: 49%; */
+    width: 100%;
+    display: block;
     max-width: 350px;
-    /* height: 70px; */
+
     margin: 8px;
     padding: 18px 30px;
 
