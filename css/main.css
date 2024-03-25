@@ -370,7 +370,6 @@ section#projects {
 
 section#projects .card {
     height: 300px;
-    
     position: relative;
 
     overflow: hidden;
@@ -438,6 +437,8 @@ section#projects .card .card-info {
 
     z-index: -3;
     font-size: .85rem;
+
+    
 
     transition: all 500ms;
 }
