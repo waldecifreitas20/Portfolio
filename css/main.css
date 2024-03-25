@@ -240,8 +240,8 @@ section#home h1 span {
 
 section#home p {
     text-align: left;
-    margin-top:20px;
-    
+    margin-top: 20px;
+
     color: var(--color-text-navbar);
 }
 
@@ -302,7 +302,7 @@ section#about #self-img {
     border-radius: 100%;
     margin: 0 auto;
     margin-bottom: 25px;
-} 
+}
 
 section#about p {
     text-indent: 30px;
@@ -311,24 +311,42 @@ section#about p {
     color: rgba(245, 245, 245, 0.651);
 
 }
+
+
 /* PROJECTS SECTION */
 section#skills {
     background-color: rgb(39, 39, 39);
 }
-section#skills .techs{
-    margin-top: 15px;
+
+
+section#skills p {
+    text-align: center;
+}
+
+section#skills .row {
+    margin: 15px 0;
+
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: left;
-
 }
 
-section#skills .techs img {
+section#skills .row .tech-item {
     display: block;
     margin: 10px auto;
-    width: 140px;
-    height: 120px;
+
+    transition: all 450ms;
 }
 
+section#skills .tech-item img {
+    width: 140px;
+    height: 120px;
+    display: block;
+
+    transition: all 500ms;
+}
+
+section#skills .tech-item:hover{
+    transform: scale(1.1);
+}
