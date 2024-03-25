@@ -74,6 +74,14 @@
     color: black;
 }
 
+.btn-secondary {
+    color: var(--color-secondary);
+}
+.btn-secondary:hover {
+    background: var(--color-secondary);
+    color: black;
+}
+
 .btn,
 .clickable {
     cursor: pointer;
@@ -241,7 +249,7 @@ section#home h1 span {
 }
 
 section#home p {
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
 
     color: var(--color-text-navbar);
@@ -349,6 +357,122 @@ section#skills .tech-item img {
     transition: all 500ms;
 }
 
-section#skills .tech-item:hover{
+section#skills .tech-item:hover {
     transform: scale(1.1);
 }
+
+
+/* PROJECTS SECTION */
+section#projects {
+    background-color: var(--color-bg);
+}
+
+
+section#projects .card {
+    height: 300px;
+    
+    position: relative;
+
+    overflow: hidden;
+    margin: 20px 0;
+    transition: all 500ms;
+}
+
+section#projects .card:hover {
+    scale: 1.02;
+}
+
+section#projects .card:hover .overlay {
+    opacity: 0;
+}
+
+section#projects .card:hover .card-info {
+    opacity: 1;
+    z-index: 2;
+}
+
+section#projects .card img {
+    height: 300px;
+    right: 0px;
+}
+
+section#projects .card .overlay {
+    height: 100%;
+    width: 100%;
+
+    opacity: 1;
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: all 500ms;
+
+}
+
+section#projects .card .overlay i {
+    margin: 0 10px;
+    scale: 1.2;
+}
+
+section#projects .card .card-info {
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 3;
+    font-size: .85rem;
+
+    transition: all 500ms;
+}
+
+
+section#projects .card .card-info .card-title {
+    font-size: 1.5em;
+}
+
+section#projects .card .card-info ul {
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: disc;
+}
+
+section#projects .card  li {
+    font-size: .75rem;
+    /* border: 1px solid; */
+    margin: 0 15px ;
+} 
+
+section#projects .card .row {
+    justify-content: space-between;
+}
+
+section#projects .card .row .btn {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    cursor: pointer;
+
+    border: 1px solid;
+    width: 100px;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
