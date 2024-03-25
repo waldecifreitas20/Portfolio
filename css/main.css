@@ -194,7 +194,7 @@ header {
     z-index: 2;
 }
 
-#drawer #menu {
+#drawer .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +215,7 @@ header {
 }
 
 
-#drawer #menu li {
+#drawer .menu li {
     display: block;
     margin: 40px 0;
 }
@@ -485,8 +485,8 @@ section#projects .card .row .btn {
 /* CONTACT SECTION */
 section#contact {
     background: linear-gradient(
-        var(--color-bg),
-        var(--color-primary-dark)
+        var(--color-primary-dark),
+        var(--color-bg)
     );
     padding-top: 200px;
     height: 100vh;
@@ -528,4 +528,40 @@ section#contact .row a:hover {
 
 section#contact .row a:hover ~ small {
     opacity: 1;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    background-color: var(--color-bg);
+    font-size: .85rem;
+    color: var(--color-text-navbar);
+
+}
+
+footer .row {
+    display: flex;
+    height: 200px;
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+footer .menu a {
+    color: var(--color-text);
+    transition: all 250ms;
+    font-size: .85rem;
+}
+
+footer .menu a:hover {
+    color: var(--color-primary);
 }
