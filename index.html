@@ -44,26 +44,26 @@
             </nav>
         </header>
 
-        <section id="home">
-
+        <section id="home" class="container">
             <article>
                 <h1>
-                    Olá,
-                    Eu sou Waldeci! <br>
+                    Olá, Eu sou Waldeci! <br>
                     <span>Desenvolvedor Front-end</span>
                 </h1>
-
-                <div class="row">
-                    <a class="btn" href="">Linkedin <i class="fa-brands fa-linkedin-in fa-lg"></i></a>
-                    <a class="btn" href="">Github <i class="fa-brands fa-github fa-lg"></i></a>
-                </div>
-
+                <p> Atualmente estou focado no desenvolvimento web front-end, tendo experiência com as tecnologias
+                    HTML5, JavaScrpit, CSS e Bootstrap.</p>
             </article>
 
-            <article id="img-block">
-                <img id="self-img" src="./images/me.png" alt="">
-                <button id="cv-download" class="btn">Baixar CV</button>
+            <article class="row">
+                <a class="btn" target="_blank" id="btn-linkedin" href="https://www.linkedin.com/in/waldeci-freitas21">
+                    Linkedin <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                </a>
+                <a class="btn" target="_blank" id="btn-cv" href="">
+                    Baixar CV
+                    <i class="fa-brands fa-github fa-lg"></i>
+                </a>
             </article>
+
 
 
         </section>
@@ -71,30 +71,78 @@
         <section id="about">
             <div class="container">
 
-                <h2>Sobre Mim</h2>
-                <p>Sou amante de tecnologia, granduando em Sistemas de informação pera Universidade Federal do Pará.
-                    Atualmente estou focado no desenvolvimento web front-end, embora também possua conhecimentos em algumas
-                    tecnologias de back-end, como NodeJs e ExpressJS. Sempre busco aprender mais sobre a área de
-                    programação, tendo como forte característica a proatividade.</p>
-                <p>Meu primeiro contato com a programação ocorreu dentro da Universidade, onde me dei conta de que eu
-                    queria trabalhar com aquilo. Gosto de ser prestativo, e não tenho problemas em buscar ajuda quando encontro-me perdido em um assunto, seja perguntando para alguém ou pesquisando na internet.</p>
+                <article id="img-block">
+                    <img id="self-img" src="./images/me.png" alt="">
+                </article>
+
+                <article>
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Sou amante de tecnologia, granduando em Sistemas de informação pera Universidade Federal do
+                        Pará.
+                        Sempre busco aprender mais sobre a área de programação, tendo como forte característica a
+                        proatividade. Gosto de resolver problemas, e não tenho medo em buscar ajuda quando encontro-me
+                        perdido em um assunto, seja perguntando para alguém ou pesquisando por conta própria.
+                    </p>
+                </article>
             </div>
 
         </section>
 
         <section id="projects">
             <div class="container">
+                <h2>Meus Projetos</h2>
                 <div class="cards">
                     <div class="card">
-                        <img src="./images/none.png" alt="">
+
+                        <div class="card-overlay">
+                            <p>Tecnologias utilizadas:</p>
+                            <div class="techs">
+                                <i class="fa-brands fa-2xl fa-js"></i>
+                                <i class="fa-brands fa-2xl fa-bootstrap"></i>
+                                <i class="fa-brands fa-2xl fa-css3-alt"></i>
+                                <i class="fa-brands fa-2xl fa-html5"></i>
+                            </div>
+                            <div class="row">
+                                <a class="btn" target="_blank" href="https://netflix-clone.fly.dev/">Visualizar</a>
+                                <a class="btn" target="_blank"
+                                    href="https://github.com/waldecifreitas20/Neflix-Clone">Github</a>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <img src="./images/pj2.png" alt="">
+                            <p>Clone da Netflix</p>
+
+                        </div>
+
                     </div>
+
                     <div class="card">
-                        <img src="./images/none.png" alt="">
+                        <div class="card-overlay">
+                            <p>Tecnologias utilizadas:</p>
+                            <div class="techs">
+
+                                <i class="fa-brands fa-2xl fa-js"></i>
+
+                                <i class="fa-brands fa-2xl fa-css3-alt"></i>
+                                <i class="fa-brands fa-2xl fa-html5"></i>
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://buses.fly.dev/">Visualizar</a>
+                                <a target="_blank" href="./requirements.ignore.txt">Github</a>
+                            </div>
+
+                        </div>
+
+                        <div class="card-content">
+                            <img src="./images/pj1.png" alt="">
+                            <p>TudoBus</p>
+                        </div>
+
                     </div>
-                    <div class="card">
-                        <img src="./images/none.png" alt="">
-                    </div>
-                   
+
+
                 </div>
             </div>
         </section>
