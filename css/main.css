@@ -104,13 +104,16 @@ ul {
 h1 {
     font-size: 1.9em;
     color: white;
-
-    margin-bottom: 15px;
 }
 
 h1,
 h2 {
     text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.7em;
 }
 
 section {
@@ -309,3 +312,23 @@ section#about p {
 
 }
 /* PROJECTS SECTION */
+section#skills {
+    background-color: rgb(39, 39, 39);
+}
+section#skills .techs{
+    margin-top: 15px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+
+}
+
+section#skills .techs img {
+    display: block;
+    margin: 10px auto;
+    width: 140px;
+    height: 120px;
+}
+
