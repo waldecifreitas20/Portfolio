@@ -130,8 +130,10 @@ body {
 
     color: var(--color-tertiary);
 
-    background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)), url("../images/bg2.png") no-repeat right top;
+    background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)), url("../images/bg2.png") right top;
     width: 100vw;
+
+    background-repeat: no-repeat;
     background-size: auto calc(100vh + 80px);
 
     /* overflow-x: hidden; */
