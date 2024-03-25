@@ -124,6 +124,9 @@ h2 {
     font-size: 1.7em;
 }
 
+p {
+    text-align: center;
+}
 section {
     padding: 40px 0;
 }
@@ -477,3 +480,52 @@ section#projects .card .row .btn {
     text-align: center;
 }
 
+
+
+/* CONTACT SECTION */
+section#contact {
+    background: linear-gradient(
+        var(--color-bg),
+        var(--color-primary-dark)
+    );
+    padding-top: 200px;
+    height: 100vh;
+}
+
+section#contact .row {
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+section#contact .row small {
+    text-align: center;
+    opacity: 0;
+    display: block;
+    margin: 15px;
+    transition: all 500ms;
+    color: var(--color-text-navbar);    
+}
+
+section#contact .row a {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: all 500ms;    
+    font-size: 2em;
+    color: var(--color-text-navbar);
+    background-color: var(--color-primary-dark);
+}
+
+section#contact .row a:hover {
+    scale: 1.05;
+    box-shadow: 0px 0 15px var(--color-text-navbar);
+    color: var(--color-text);
+
+}
+
+section#contact .row a:hover ~ small {
+    opacity: 1;
+}
