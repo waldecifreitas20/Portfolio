@@ -13,14 +13,11 @@
     --color-tertiary: white;
 
     --color-shadow: rgba(0, 0, 0, 0.452);
-    --color-text: rgb(249, 249, 249);
 
     --color-text-navbar: rgba(255, 255, 255, 0.555);
 
     --font-size: 18px;
     --border-radius: 0.5em;
-
-    --box-padding: 5px;
 
     --navbar-height: 80px;
 }
