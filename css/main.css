@@ -292,11 +292,20 @@ section#about {
     color: var(--color-text);
 }
 
+section#about #self-img {
+    width: 200px;
+    display: block;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+} 
+
 section#about p {
     text-indent: 30px;
     text-align: justify;
     margin: 10px 0;
+    color: rgba(245, 245, 245, 0.651);
 
 }
-
 /* PROJECTS SECTION */
