@@ -436,7 +436,7 @@ section#projects .card .card-info {
     flex-direction: column;
     justify-content: space-between;
 
-    z-index: 3;
+    z-index: -3;
     font-size: .85rem;
 
     transition: all 500ms;
