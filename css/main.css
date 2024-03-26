@@ -390,8 +390,13 @@ section#projects .card:hover .card-info {
     z-index: 2;
 }
 
+section#projects .card .card-content{
+    height: 100%;
+    width: 100%;
+}
+
 section#projects .card img {
-    height: 300px;
+    height: 100%;
     right: 0px;
 }
 

@@ -1,13 +1,18 @@
 @media (min-width: 576px) {
 
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
-    nav ul {
-        display: flex;
-        width: 25%;
-        flex-direction: column;
-        justify-content: space-between;
+
+    /* PROJECTS SECTION */
+    section#projects .card {
+        height: 450px;    
+    }
+    
+    section#projects .card img{
+        display: block;
+        position: relative;
+        height: 100%;
     }
 }
