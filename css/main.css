@@ -139,7 +139,7 @@ body {
     color: var(--color-tertiary);
 
     background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)), url("../images/bg2.png") right top;
-    width: 100vw;
+    max-width: 100vw;
 
     background-repeat: no-repeat;
     background-size: auto calc(100vh + 80px);
@@ -237,7 +237,7 @@ nav a:hover {
 section#home {
     position: relative;
     height: calc(100vh - var(--navbar-height));
-
+    
 
     display: flex;
     flex-direction: column;
