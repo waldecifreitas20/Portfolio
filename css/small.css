@@ -10,9 +10,4 @@
         height: 450px;    
     }
     
-    section#projects .card img{
-        display: block;
-        position: relative;
-        height: 100%;
-    }
 }

@@ -1,8 +1,25 @@
-@media (min-width: 730px) {
+@media (min-width: 768px) {
 
     h1 {
         font-size: 3em;
     }
 
+    section#home .row {
+        flex-direction: row;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+     /* PROJECTS SECTION */
+     section#projects .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }
+     section#projects .card {
+        height: 250px;
+        width: calc(50% - 20px);    
+        margin: 10px;
+    }
     
 }
