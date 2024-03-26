@@ -76,6 +76,7 @@
 .btn-secondary {
     color: var(--color-secondary);
 }
+
 .btn-secondary:hover {
     background: var(--color-secondary);
     color: black;
@@ -126,6 +127,7 @@ h2 {
 p {
     text-align: center;
 }
+
 section {
     padding: 40px 0;
 }
@@ -237,7 +239,7 @@ nav a:hover {
 section#home {
     position: relative;
     height: calc(100vh - var(--navbar-height));
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -389,7 +391,7 @@ section#projects .card:hover .card-info {
     z-index: 2;
 }
 
-section#projects .card .card-content{
+section#projects .card .card-content {
     height: 100%;
     width: 100%;
 }
@@ -442,53 +444,51 @@ section#projects .card .card-info {
     z-index: -3;
     font-size: .85rem;
 
-    
+
 
     transition: all 500ms;
 }
 
 
 section#projects .card .card-info .card-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 section#projects .card .card-info ul {
     display: flex;
-   
+
     flex-wrap: wrap;
     justify-content: center;
     list-style: disc;
 }
 
-section#projects .card  li {
+section#projects .card li {
     font-size: .75rem;
     /* border: 1px solid; */
-    margin: 0 15px ;
-} 
+    margin: 0 15px;
+}
 
 section#projects .card .row {
     justify-content: space-between;
 }
 
 section#projects .card .row .btn {
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin: 0 10px;
     cursor: pointer;
-
+    padding: 10px 0;
     border: 1px solid;
-    width: 100px;
+    display: block;
+    width: 100%;
     border-radius: var(--border-radius);
     text-align: center;
 }
 
 
-
 /* CONTACT SECTION */
 section#contact {
-    background: linear-gradient(
-        var(--color-primary-dark),
-        var(--color-bg)
-    );
+    background: linear-gradient(var(--color-primary-dark),
+            var(--color-bg));
     padding-top: 200px;
     height: 100vh;
 }
@@ -504,7 +504,7 @@ section#contact .row small {
     display: block;
     margin: 15px;
     transition: all 500ms;
-    color: var(--color-text-navbar);    
+    color: var(--color-text-navbar);
 }
 
 section#contact .row a {
@@ -513,8 +513,8 @@ section#contact .row a {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    transition: all 500ms;    
+
+    transition: all 500ms;
     font-size: 2em;
     color: var(--color-text-navbar);
     background-color: var(--color-primary-dark);
@@ -527,7 +527,7 @@ section#contact .row a:hover {
 
 }
 
-section#contact .row a:hover ~ small {
+section#contact .row a:hover~small {
     opacity: 1;
 }
 
