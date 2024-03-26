@@ -152,9 +152,7 @@ body {
 /* MENU */
 header {
     height: 80px;
-    top: 0;
     width: 100%;
-    z-index: 3;
 }
 
 #navbar {
@@ -201,7 +199,6 @@ header {
 
 #drawer .disposer.clickable {
     display: block;
-    float: right;
     border: none;
     background: none;
     color: var(--color-primary);
@@ -215,6 +212,7 @@ header {
 #drawer .menu li {
     display: block;
     margin: 40px 0;
+    text-transform: uppercase;
 }
 
 nav a {

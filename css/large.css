@@ -1,0 +1,43 @@
+@media (min-width: 992px) {
+
+    #navbar {
+        position: relative;
+    }
+
+    #navbar #btn-menu, 
+    #navbar #drawer span.disposer {
+        display: none;
+    }
+
+    .close-aside-menu {
+        left: 0;
+    }
+
+    #navbar #drawer{
+        top: 0px;
+        height: 100%;
+        padding: 0;
+        position: relative;        
+        width: 400px;
+        margin-left: auto;
+        background-color: transparent;
+    }
+
+    #navbar #drawer .menu {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbar #drawer .menu a {
+        margin: 0;
+        font-size: .8rem;
+        color: var(--color-text-navbar);
+    }
+    
+    #navbar #drawer .menu a:hover {
+        color: var(--color-secondary);
+    }
+
+}
