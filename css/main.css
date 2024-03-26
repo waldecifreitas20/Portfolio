@@ -487,8 +487,10 @@ section#projects .card .row .btn {
 
 /* CONTACT SECTION */
 section#contact {
-    background: linear-gradient(var(--color-primary-dark),
-            var(--color-bg));
+    background: black linear-gradient(
+        rgb(95, 95, 95),
+        rgb(0, 0, 0)
+        );
     padding-top: 200px;
     height: 100vh;
 }
@@ -517,11 +519,12 @@ section#contact .row a {
     transition: all 500ms;
     font-size: 2em;
     color: var(--color-text-navbar);
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-text-navbar);
 }
 
 section#contact .row a:hover {
     scale: 1.05;
+    background-color: var(--color-primary-dark);
     box-shadow: 0px 0 15px var(--color-text-navbar);
     color: var(--color-text);
 
@@ -535,7 +538,7 @@ section#contact .row a:hover~small {
 /* FOOTER */
 footer {
     padding: 20px 0;
-    background-color: var(--color-bg);
+    background-color: black;
     font-size: .85rem;
     color: var(--color-text-navbar);
 
@@ -558,7 +561,7 @@ footer .menu {
 }
 
 footer .menu a {
-    color: var(--color-text);
+    color: white;
     transition: all 250ms;
     font-size: .85rem;
 }
