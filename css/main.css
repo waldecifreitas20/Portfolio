@@ -48,10 +48,12 @@
 
 .close-aside-menu {
     left: -100vw;
+    opacity: 0;
 }
 
 .open-aside-menu {
     left: 0;
+    opacity: 1;
 }
 
 
@@ -178,7 +180,7 @@ header {
 
     background: var(--color-bg);
 
-    transition: all 700ms;
+    transition: left 500ms, right 500ms, opacity 750ms;
 
     font-size: 1.5em;
 
@@ -221,7 +223,7 @@ nav a {
     display: block;
     width: 100%;
 
-    transition: all 200ms;
+    /* transition: color 200ms; */
     text-align: center;
 }
 
@@ -236,7 +238,6 @@ section#home {
     position: relative;
     height: calc(100vh - var(--navbar-height));
     
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;

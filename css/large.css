@@ -9,11 +9,10 @@
         display: none;
     }
 
-    .close-aside-menu {
-        left: 0;
-    }
-
+   
     #navbar #drawer{
+        left: 0;
+        opacity: 1;
         top: 0px;
         height: 100%;
         padding: 0;
