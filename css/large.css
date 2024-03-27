@@ -39,6 +39,18 @@
         color: var(--color-secondary);
     }
 
+    section#home h1{
+        font-size: 4rem;
+    }
+
+
+
+    section#home p{
+        width: 600px;
+        margin: auto;
+        
+    }
+
     section#about .row {
         height: 400px;
         flex-direction: row;
