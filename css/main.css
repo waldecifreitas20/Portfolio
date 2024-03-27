@@ -141,8 +141,6 @@ body {
     font-size: var(--font-size);
 
     color: var(--color-tertiary);
-
-    /* overflow-x: hidden; */
 }
 
 #top {
@@ -348,20 +346,24 @@ section#skills .row {
 section#skills .row .tech-item {
     display: block;
     margin: 10px auto;
+    opacity: .5;
 
     transition: all 450ms;
 }
 
 section#skills .tech-item img {
-    width: 140px;
+    width: 135px;
     height: 120px;
     display: block;
-
+    margin-bottom: 20px;
+    
     transition: all 500ms;
 }
 
 section#skills .tech-item:hover {
     transform: scale(1.1);
+    opacity: 1;
+
 }
 
 
