@@ -146,7 +146,7 @@ body {
 }
 
 #top {
-    background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)), url("../images/bg2.png") right top;
+    background: linear-gradient(180deg, var(--color-primary-dimmed), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)), url("../assets/images/bg2.png") right top;
     max-width: 100vw;
 
     background-repeat: no-repeat;
