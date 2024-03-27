@@ -544,7 +544,7 @@ section#contact .row a:hover {
 
 }
 
-section#contact .row a:hover~small {
+section#contact .row a:hover ~ small {
     opacity: 1;
 }
 
