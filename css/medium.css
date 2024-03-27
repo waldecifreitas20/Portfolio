@@ -25,5 +25,16 @@
     section#projects .card .card-info p {
         text-align: justify;
     }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .menu {
+        margin: auto;
+        width: 350px;
+    }
     
 }
