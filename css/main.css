@@ -309,6 +309,10 @@ section#about {
     color: var(--color-text);
 }
 
+section#about .row {
+    flex-direction: column;
+}
+
 section#about #self-img {
     width: 200px;
     display: block;
@@ -316,6 +320,7 @@ section#about #self-img {
     border-radius: 100%;
     margin: 0 auto;
     margin-bottom: 25px;
+    background-color: bisque;
 }
 
 section#about p {

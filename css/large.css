@@ -39,4 +39,20 @@
         color: var(--color-secondary);
     }
 
+    section#about .row {
+        height: 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    section#about #description {
+        width: 75%;
+    }
+
+    section#about #img-block img {
+        width: 70%;
+        
+    }
+
 }
