@@ -7,11 +7,11 @@
 
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/extra-small.css">
-        <link rel="stylesheet" href="./css/small.css">
-        <link rel="stylesheet" href="./css/medium.css">
-        <link rel="stylesheet" href="./css/large.css">
-        <link rel="stylesheet" href="./css/extra-large.css">
+        <link rel="stylesheet" href="./css/breakpoints/extra-small.css">
+        <link rel="stylesheet" href="./css/breakpoints/small.css">
+        <link rel="stylesheet" href="./css/breakpoints/medium.css">
+        <link rel="stylesheet" href="./css/breakpoints/large.css">
+        <link rel="stylesheet" href="./css/breakpoints/extra-large.css">
 
         <link rel="shortcut icon" href="./assets/images/logo-color.png" type="image/x-icon">
 
@@ -22,16 +22,190 @@
 
     <body>
 
-        <header>
+        <header class="x-padding" id="header">
+            <button id="btn-open-menu">MENU</button>
 
+            <nav id="top-navbar">
+                <button id="btn-close-menu">X</button>
+
+                <!-- MENU OPTIONS -->
+                <ul>
+                    <li>
+                        <a href="">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- FONT SIZE CONTROLLERS -->
+            <div id="btn-font-size">
+                <button>+A</button>
+                <button>-A</button>
+            </div>
         </header>
-        
+
+
         <main>
 
+            <section id="home">
+                <article id="top-techs">
+                    <img src="./assets/images/techs/react.png" alt="">
+                    <img src="./assets/images/techs/typescript.png" alt="">
+                    <img src="./assets/images/techs/javascript.png" alt="">
+                    <img src="./assets/images/techs/tailwind.png" alt="">
+                    <img src="./assets/images/techs/bootstrap.png" alt="">
+
+                    <img src="./assets/images/techs/html.png" alt="">
+                    <img src="./assets/images/techs/css.png" alt="">
+                    <img src="./assets/images/techs/git.png" alt="">
+                    <img src="./assets/images/techs/node.png" alt="">
+                    <img src="./assets/images/techs/firebase.png" alt="">
+                </article>
+
+                <article id="introdutction">
+                    <h1>Olá meu nome é Waldeci</h1>
+                    <p id="subtitle">Desenvolvedor Front-end</p>
+
+                    <p>Sou um amante de tecnologia focado em ajudar você a conquistar sucesso no seu negócio</p>
+                </article>
+
+                <article>
+                    <button class="btn btn-primary">Fale comigo</button>
+                    <button class="btn">Ver Projetos</button>
+                </article>
+
+            </section>
+
+            <section id="projects">
+                <h2>Meus Projetos</h2>
+
+                <div id="projects-cards">
+                    <article class="card">
+
+                        <div>
+                            <img src="./assets/images/makeshop.jpg" alt="">
+                        </div>
+
+                        <h3>Makeshop</h3>
+                        <p>E-commerce de produtos voltados ao público feminino, tais quais perfumes, maquiagens e
+                            cuidados da pele.</p>
+
+                        <div>
+                            <button class="btn btn-primary">Visualizar</button>
+                            <button class="btn ">Código-fonte</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="services">
+                <h2>Serviços</h2>
+
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-desktop"></i>
+                            <p>Landing Pages</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Websites Responsivos</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-figma"></i>
+                            <p>Prototipagem de Telas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Hospedagem de sites</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section id="my-stack">
+                <article>
+                    <img src="./assets/images/techs/react.png" alt="">
+                    <img src="./assets/images/techs/typescript.png" alt="">
+                    <img src="./assets/images/techs/javascript.png" alt="">
+                    <img src="./assets/images/techs/tailwind.png" alt="">
+                    <img src="./assets/images/techs/bootstrap.png" alt="">
+
+                    <img src="./assets/images/techs/html.png" alt="">
+                    <img src="./assets/images/techs/css.png" alt="">
+                    <img src="./assets/images/techs/git.png" alt="">
+                    <img src="./assets/images/techs/node.png" alt="">
+                    <img src="./assets/images/techs/firebase.png" alt="">
+                </article>
+            </section>
+
+
+            <section id="about">
+                <div>
+                    <img src="./assets/images/me.png" alt="foto de waldeci">
+                </div>
+
+                <h2>Sobre Min</h2>
+                <p>Sou desenvolvedor <span class="text-primary">front-end</span> com muito amor ao que faço, buscando
+                    sempre entregar o melhor de mim em cada projeto, pensando na <span class="text-primary">satisfação
+                        do cliente</span>. Sou extremamente proativo e adoro <span class="text-primary">resolver
+                        problemas</span>, por isso amo a área de tecnologia. Também sou <span
+                        class="text-primary">autodidata</span> e possuo <span class="text-primary">inglês
+                        intermediário</span>.</p>
+            </section>
+
+
+            <section id="contact">
+                <article>
+                    <h2>Quer impulsionar o alcance da sua empresa?</h2>
+                    <p>Fale comigo!</p>
+                </article>
+
+                <form id="form-contact">
+                    <input name="name" type="text" required placeholder="Seu nome">
+                    <input name="email" type="email" required placeholder="Seu Email">
+
+                    <textarea name="message" required placeholder="Conte quais problemas deseja solucionar"></textarea>
+                </form>
+
+                <article>
+                    <h2>...ou se preferir...</h2>
+                    <p>Você pode me encontrar aqui</p>
+
+                    <div id="others-contacts">
+                        <a href=""><i class="fa-2xl fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-2xl fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-2xl fa-solid fa-envelope"></i></a>
+                        <a href=""><i class="fa-2xl fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </article>
+            </section>
+
         </main>
-        
+
+
         <footer>
-            
+            <nav>
+                <a href="">Projetos</a>
+                <a href="">Serviços</a>
+                <a href="">Contato</a>
+            </nav>
+
+            <div>
+                <p>Waldeci Freitas 2024 - Desenvolvedor Front-end</p>
+                <p>Todos os direitos reservados </p>
+            </div>
         </footer>
 
         <script src="./js/main.js"></script>
