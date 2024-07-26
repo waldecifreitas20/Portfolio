@@ -48,11 +48,19 @@ a {
     cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+}
+
+button:active, a:active {
+    transform: scale(0.95);
+}
+
 /* ------------ */
 html,
 body {
     max-width: 100vw;
-    /* overflow-x: hidden; */
+    
     font-family: "font-normal";
 }
 
@@ -87,4 +95,12 @@ body {
 
 .open-menu {
     left: 0px;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+.enable-scroll {
+    overflow: auto;
 }
