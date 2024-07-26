@@ -34,8 +34,8 @@ function handleFontSizeControl() {
   const body = document.getElementsByTagName("body")[0];
 
   function increaseFontSize() {
-    if (fontSize < 1.8) {
-      fontSize += 0.2;
+    if (fontSize < 1.5) {
+      fontSize *= 1.2;
       body.style.fontSize = `${fontSize}rem`;
     }
   }
