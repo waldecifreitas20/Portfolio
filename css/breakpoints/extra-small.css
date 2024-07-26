@@ -20,7 +20,11 @@ header {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
 
+header #btn-open-menu i{
+  font-size: 1.8rem;
 }
 
 header #btn-open-menu,
@@ -33,8 +37,8 @@ header nav #btn-close-menu {
 
 header #block-font-size button {
   font-weight: bold;
-  font-size: 1.2rem;
   margin-left: 10px;
+  font-size: 1.3rem;
 }
 
 
