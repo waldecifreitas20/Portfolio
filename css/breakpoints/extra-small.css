@@ -104,8 +104,14 @@ main section {
   padding-right: 20px;
 }
 
-main section h2 {
+main #projects h2,
+main #services h2 {
   margin-bottom: 30px;
+}
+
+main #my-stack h2,
+main #about h2 {
+  margin-bottom: 15px;
 }
 
 /* HOME SECTION */
@@ -130,7 +136,7 @@ main #home {
 
 #home #introduction h1 {
   font-size: 1.2em;
-  color: rgb(133, 133, 133);
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -144,7 +150,7 @@ main #home {
   margin-bottom: 50px;
   text-align: justify;
   width: 100%;
-  color: gray;
+  color: var(--color-text);
 }
 
 
@@ -154,6 +160,7 @@ main #home {
 
   margin-top: 20px;
 }
+
 
 /* PROJECT SECTION */
 main #projects::before {
@@ -207,6 +214,7 @@ main #projects {
   font-family: "font-light";
   margin-bottom: 8px;
 }
+
 .card p {
   font-size: .9em;
 }
@@ -225,11 +233,9 @@ main #projects {
 
 /* SERVICES SECTION */
 main #services {
-  background: linear-gradient(
-    90deg,
-    var(--color-primary-light),
-    var(--color-primary)
-  );
+  background: linear-gradient(90deg,
+      var(--color-primary-light),
+      var(--color-primary));
 
   padding-top: 60px;
   padding-bottom: 50px;
@@ -274,8 +280,105 @@ main #services h2 {
 #services ul a img {
   display: block;
   height: 80px;
-  
+
   margin-bottom: 10px;
 }
 
-/* MY  */
+/* MY STACK */
+main #my-stack {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  background-color: var(--color-secondary);
+}
+
+main #my-stack div {
+  margin: auto;
+  width: fit-content;
+}
+
+main #my-stack article {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+#my-stack article img {
+  display: block;
+  height: 100px;
+  width: 100px;
+
+  margin: auto;
+}
+
+/* ABOUT SECTION */
+main #about {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+main #about img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 100%;
+}
+
+main #about p {
+  color: var(--color-text);
+  font-family: "font-bold";
+  text-align: justify;
+}
+
+/* CONTACT SECTION */
+main #contact {
+  background-color: var(--color-secondary);
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+main #contact h2 {
+  margin-bottom: 10px;
+}
+
+main #contact h2 ~ p {
+  color: var(--color-text);
+  font-family: "font-bold";
+}
+
+main #form-contact {
+  margin: 25px 0;
+}
+
+main #form-contact input,
+main #form-contact textarea {
+  resize: none;
+  width: 100%;
+  display: block;
+
+  margin-bottom: 10px;
+  padding: 15px 10px;
+  
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline-color: var(--color-primary);
+
+  box-shadow: inset 0px 0px 1px rgb(199, 199, 199,.5);
+}
+
+main #form-contact textarea {
+  height: 200px;
+}
+
+main #form-contact .btn {
+  width: 100%;
+
+  margin-top: 15px;
+}

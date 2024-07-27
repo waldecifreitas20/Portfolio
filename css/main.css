@@ -22,7 +22,8 @@
     --color-primary: #801cff;
     --color-primary-hover: #600baf;
     --color-primary-light: #C14AF9;
-    --color-secondary: #CFEBE6;
+    --color-secondary: rgb(221, 253, 255);
+    --color-text: rgb(133, 133, 133);
 
     --bg-primary: rgba(214, 225, 223, 0.7);
     --bg-secondary: rgba(216, 185, 255, 0.67);
