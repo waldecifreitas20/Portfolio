@@ -15,6 +15,7 @@ header {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-primary);
   box-shadow: var(--box-shadow);
+  background-color: rgba(255, 255, 255, 0.3);
 
   display: flex;
   justify-content: space-between;
@@ -103,6 +104,10 @@ main section {
   padding-right: 20px;
 }
 
+main section h2 {
+  margin-bottom: 30px;
+}
+
 /* HOME SECTION */
 main #home {
   background: linear-gradient(90deg,
@@ -119,11 +124,11 @@ main #home {
   text-align: center;
 }
 
-#home #introduction{
+#home #introduction {
   margin-top: 30px;
 }
 
-#home #introduction h1{
+#home #introduction h1 {
   font-size: 1.2em;
   color: rgb(133, 133, 133);
   margin: 0;
@@ -161,12 +166,116 @@ main #projects::before {
   top: -100px;
   left: 0;
   background: linear-gradient(180deg,
-  transparent,
-  white);
+      transparent,
+      white);
 }
 
 main #projects {
   position: relative;
   padding-top: 50px;
+  padding-bottom: 80px;
   z-index: 2;
+
 }
+
+#projects .card {
+  border: 1px solid rgb(77, 77, 77, .2);
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 3px rgba(77, 77, 77, 0.2);
+
+  padding: 20px;
+}
+
+.card .project-img {
+  display: block;
+  width: 300px;
+  margin: 0px auto;
+}
+
+.card .project-techs {
+  width: 100%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.card .project-techs img {
+  height: 30px;
+}
+
+.card h3 {
+  color: var(--color-primary);
+  font-family: "font-light";
+  margin-bottom: 8px;
+}
+.card p {
+  font-size: .9em;
+}
+
+.card .card-btn-group {
+  margin-top: 30px;
+}
+
+.card .card-btn-group .btn {
+  width: 100%;
+}
+
+.card .card-btn-group .btn-primary {
+  margin-bottom: 10px;
+}
+
+/* SERVICES SECTION */
+main #services {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-light),
+    var(--color-primary)
+  );
+
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+main #services h2 {
+  color: white;
+}
+
+#services ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+}
+
+#services ul a {
+  color: white;
+  width: 250px;
+  height: 200px;
+  padding: 20px 0;
+
+  text-align: center;
+  border: 2px solid white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#services ul a:hover {
+  background-color: rgba(255, 255, 255, 0.199);
+}
+
+#services ul a img {
+  display: block;
+  height: 80px;
+  
+  margin-bottom: 10px;
+}
+
+/* MY  */

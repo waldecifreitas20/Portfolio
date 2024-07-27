@@ -60,7 +60,7 @@ img {
     max-width: 100%;
 }
 
-button:active, a:active {
+.btn:active, button:active {
     transform: scale(0.95);
 }
 
