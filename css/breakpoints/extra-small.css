@@ -232,11 +232,14 @@ main #projects {
 }
 
 /* SERVICES SECTION */
-main #services {
+main #services,
+footer {
   background: linear-gradient(90deg,
       var(--color-primary-light),
       var(--color-primary));
+}
 
+main #services {
   padding-top: 60px;
   padding-bottom: 50px;
 
@@ -348,7 +351,7 @@ main #contact h2 {
   margin-bottom: 10px;
 }
 
-main #contact h2 ~ p {
+main #contact h2~p {
   color: var(--color-text);
   font-family: "font-bold";
 }
@@ -365,12 +368,12 @@ main #form-contact textarea {
 
   margin-bottom: 10px;
   padding: 15px 10px;
-  
+
   border-radius: var(--border-radius);
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline-color: var(--color-primary);
 
-  box-shadow: inset 0px 0px 1px rgb(199, 199, 199,.5);
+  box-shadow: inset 0px 0px 1px rgb(199, 199, 199, .5);
 }
 
 main #form-contact textarea {
@@ -381,4 +384,63 @@ main #form-contact .btn {
   width: 100%;
 
   margin-top: 15px;
+}
+
+main #others-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+
+  margin-top: 25px;
+}
+
+main #others-contacts img {
+  display: block;
+  height: 50px;
+}
+
+main #others-contacts a {
+  transition: all 500ms;
+}
+
+main #others-contacts a:hover {
+  transform: scale(1.15);
+}
+
+/* ------------------- */
+/* FOOTER */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 20px;
+}
+
+footer nav {
+  padding: 50px 0;
+  width: 60%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+footer nav a {
+  color: white;
+  font-family: "font-medium";
+}
+
+footer nav a:hover {
+  color: var(--color-text);
+
+}
+
+footer #bottom {
+ 
+  color: rgb(190, 190, 190);
+  font-size: .9em;
+  width: 100%;
+  text-align: center;
 }
