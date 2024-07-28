@@ -10,6 +10,7 @@ function handleMenuBehavior() {
   const asideMenu = document.getElementById("top-navbar");
   const btnOpenMenu = document.getElementById("btn-open-menu");
   const btnCloseMenu = document.getElementById("btn-close-menu");
+  const menuOptions = document.getElementsByClassName("menu-disposer");
   const body = document.getElementsByTagName("body")[0];
 
   function openMenu() {
@@ -24,6 +25,10 @@ function handleMenuBehavior() {
 
   btnOpenMenu.addEventListener("click", openMenu);
   btnCloseMenu.addEventListener("click", closeMenu);
+
+  for (const menuOption of menuOptions) {
+    menuOption.addEventListener("click", closeMenu);
+  }
 
 }
 
