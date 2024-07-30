@@ -3,6 +3,7 @@ let fontSize = 1;
 function main() {
   handleMenuBehavior();
   handleFontSizeControl();
+  handleFormSubmit();
 }
 
 
@@ -54,6 +55,50 @@ function handleFontSizeControl() {
 
   btnFontBigger.addEventListener("click", increaseFontSize);
   btnFontSmaller.addEventListener("click", decreaseFontSize);
+
+}
+
+function handleFormSubmit() {
+  const btnSubmit = document.getElementById("btn-submit");
+
+  btnSubmit.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    const name = document.getElementById("input-name").value;
+    const email = document.getElementById("input-email").value;
+    const message = document.getElementById("message").value;
+
+    if (!name || !email || !message) {
+      alert('Preencha os campos');
+      return;
+    }
+
+    sendMessage(name, email, message);
+  });
+
+  function sendMessage(name, email, message) {
+    const url1 = "https://app-email-sender.fly.dev/send-email";
+
+    fetch(url1, {
+      headers: {
+        'Content-type': 'application/json',
+      },
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      })
+    })
+      .then(response => {
+        console.log(response);
+      })
+      .then(() => {
+        alert("Messagem enviada com sucesso. Em breve estarei entrando em contato com você! :)");
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  }
 
 }
 
