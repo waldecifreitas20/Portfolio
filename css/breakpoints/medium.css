@@ -66,13 +66,12 @@
 
   /* PROJECTS SECTION */
   #projects #projects-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    width: 100%;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
   }
 
   #projects .card {

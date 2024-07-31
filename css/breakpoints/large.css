@@ -10,10 +10,48 @@
 
 @media (min-width: 992px) {
 
-  #techs-top-img {
-    height: 300px;
+  /* MAIN CONTENT */
+  /* HOME SECTION */
+  #home {
+    display: flex;
+    justify-content: space-around;
+
+    gap: 15px;
+  }
+
+  #home #techs-top {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #home #techs-top-img {
+    width: 100%;
+    /* flex-shrink: 1; */
+    max-width: 400px;
     transition: none;
     animation: orbit linear infinite 10s;
   }
 
+  #home article {
+    margin-top: 40px;
+    flex-shrink: 0;
+  }
+
+  #home #introduction,
+  #home #introduction #description {
+    text-align: left;
+  }
+
+  #home #introduction #description {
+    max-width: 500px;
+  }
+
+  /* PROJECTS SECTION */
+  main #projects #projects-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #projects .card {
+    margin: 0;
+  }
 }
