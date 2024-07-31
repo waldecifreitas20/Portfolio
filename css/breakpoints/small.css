@@ -1,5 +1,10 @@
 @media (min-width: 576px) {
+
   /* MAIN CONTENT */
+  main section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   #home #btn-top-group,
   #projects .card .card-btn-group {
     display: flex;
@@ -9,7 +14,7 @@
     margin-top: 0;
   }
 
-/* PROJECTS SECTIONS*/
+  /* PROJECTS SECTIONS*/
   #projects .card {
     max-width: 400px;
     margin: 10px auto;
@@ -24,9 +29,14 @@
   }
 
   /* SERVICES SECTION */
-  main #services ul{
+  main #services ul {
     display: grid;
-    
+
     grid-template-areas: "a a" "b b";
+  }
+
+  /* MY STACK SECTION */
+  main #my-stack article {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
