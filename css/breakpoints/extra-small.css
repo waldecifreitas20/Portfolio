@@ -233,8 +233,7 @@ main #projects {
 }
 
 /* SERVICES SECTION */
-main #services,
-footer {
+main #services {
   background: linear-gradient(90deg,
       var(--color-primary-light),
       var(--color-primary));
@@ -407,36 +406,69 @@ main #others-contacts a:hover {
 /* FOOTER */
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 60px;
 
-  padding-bottom: 20px;
+  background: linear-gradient(90deg,
+      var(--color-primary),
+      var(--color-primary-light));
+}
+
+footer section {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  margin-bottom: 50px;
+}
+
+footer h3 {
+  color: white;
+  font-family: "font-normal";
+  margin-bottom: 25px;
+  font-size: 1.25em;
 }
 
 footer nav {
-  padding: 50px 0;
-  width: 60%;
-  max-width: 400px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
 
+  font-size: 1.10em;
 }
 
-footer nav a {
-  color: white;
-  font-family: "font-medium";
+footer nav a,
+footer #others-contacts li .contact  {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "font-light";
+
+  width: fit-content;
+
+  transition: all 300ms;
 }
 
+footer #others-contacts li a:hover,
 footer nav a:hover {
-  color: var(--color-text);
+  color: white;
+}
 
+
+footer #others-contacts li i {
+  color: white;
+  margin-right: 10px;
+}
+
+footer #others-contacts li .contact {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 15px;
+  display: inline-block;
+  /* font-size: .9em; */
 }
 
 footer #bottom {
-
-  color: rgb(190, 190, 190);
+  background-color: #190025;
+  color: rgba(190, 190, 190, 0.74);
   font-size: .9em;
   width: 100%;
   text-align: center;
+  margin-bottom: 0px;
+  padding: 20px 0;
 }
