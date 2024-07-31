@@ -195,7 +195,8 @@ main #projects {
 
 .card .project-img {
   display: block;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   margin: 0px auto;
 }
 
@@ -295,18 +296,13 @@ main #my-stack {
   background-color: var(--color-secondary);
 }
 
-main #my-stack div {
-  margin: auto;
-  width: fit-content;
-}
-
 main #my-stack article {
-  display: flex;
-  width: fit-content;
-  flex-wrap: wrap;
-  gap: 10px;
-
+  margin: 0 auto;
   margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+
 }
 
 #my-stack article img {
@@ -410,7 +406,7 @@ main #others-contacts a:hover {
 /* ------------------- */
 /* FOOTER */
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -438,7 +434,7 @@ footer nav a:hover {
 }
 
 footer #bottom {
- 
+
   color: rgb(190, 190, 190);
   font-size: .9em;
   width: 100%;

@@ -1,3 +1,90 @@
 @media (min-width: 768px) {
+
+  /* MAIN CONTENT */
+  main section h2 {
+    font-size: 2em;
+  }
+
+  /* HOME SECTION */
+  #introduction #subtitle {
+    font-size: 2.8em;
+  }
+
+  #introduction,
+  #introduction #description {
+    text-align: center;
+  }
+
+  #introduction #description {
+    margin-bottom: 10px;
+  }
+
+  /* PROJECTS SECTION */
+  #projects #projects-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+  }
+
+  #projects .card {
+    margin: 0;
+    max-width: 300px;
+    /* margin-right: auto; */
+  }
+
+  #projects .card .card-btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* MY STACK SECTION */
+  main #my-stack article {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* ABOUT SECTION */
+  main #about {
+    display: flex;
+    gap: 50px;
+  }
+
+  #about #profile-picture-block {
+    display: block;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+  }
+
+  /* CONTACT SECTION */
+  #contact #form-contact {
+    display: block;
+    max-width: 800px;
+    margin-left:  auto;
+    margin-right:  auto;
+  }
+
+  #form-contact div{
+    display: flex;
+    gap: 20px;
+  }
+
+  #form-contact #btn-submit {
+    max-width: 300px;
+    margin-left: auto;
+  }
+
+  /* OTHERS CONTACTS */
+  #contact #others-contacts {
+    width: 500px;
+    
+    justify-content: left;
+  }
+
+  main #others-contacts img {
+    height: 60px;
+  }
 }
