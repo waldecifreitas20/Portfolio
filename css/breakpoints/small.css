@@ -1,3 +1,27 @@
 @media (min-width: 576px) {
 
+  #home #btn-top-group,
+  #projects .card .card-btn-group {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+    margin-top: 0;
+  }
+
+
+  #projects .card {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  #projects .card .card-btn-group {
+    margin-top: 20px;
+  }
+
+  #projects .card .card-btn-group .btn {
+    height: 100%;
+  }
+
+
 }
