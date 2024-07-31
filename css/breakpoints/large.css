@@ -1,5 +1,19 @@
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 @media (min-width: 992px) {
 
- 
+  #techs-top-img {
+    height: 300px;
+    transition: none;
+    animation: orbit linear infinite 10s;
+  }
 
 }

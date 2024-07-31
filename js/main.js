@@ -104,14 +104,14 @@ function handleFormSubmit() {
 }
 
 function handleHomeTechsImage() {
-  const img = document.getElementById("techs-top");
+  const img = document.getElementById("techs-top-img");
 
   updateHomeImage();
 
   window.addEventListener("resize", updateHomeImage);
 
   function updateHomeImage() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
       img.setAttribute("src", "./assets/images/techs-small.png");
     } else {
       img.setAttribute("src", "./assets/images/techs-big.png");
