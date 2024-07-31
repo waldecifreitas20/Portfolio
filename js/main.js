@@ -4,6 +4,7 @@ function main() {
   handleMenuBehavior();
   handleFontSizeControl();
   handleFormSubmit();
+  handleHomeTechsImage();
 }
 
 
@@ -100,6 +101,22 @@ function handleFormSubmit() {
       });
   }
 
+}
+
+function handleHomeTechsImage() {
+  const img = document.getElementById("techs-top");
+
+  updateHomeImage();
+
+  window.addEventListener("resize", updateHomeImage);
+
+  function updateHomeImage() {
+    if (window.innerWidth < 768) {
+      img.setAttribute("src", "./assets/images/techs-small.png");
+    } else {
+      img.setAttribute("src", "./assets/images/techs-big.png");
+    }
+  }
 }
 
 main();
