@@ -16,8 +16,6 @@
     display: none;
   }
 
-  
-
   header #top-navbar {
     position: relative;
     height: fit-content;
@@ -106,8 +104,7 @@
   /* CONTACT SECTION */
   #contact #form-contact {
     display: block;
-    max-width: 800px;
-    margin-left: auto;
+    max-width: 900px;
     margin-right: auto;
   }
 

@@ -381,26 +381,6 @@ main #form-contact .btn {
   margin-top: 15px;
 }
 
-main #others-contacts {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-
-  margin-top: 25px;
-}
-
-main #others-contacts img {
-  display: block;
-  height: 50px;
-}
-
-main #others-contacts a {
-  transition: all 500ms;
-}
-
-main #others-contacts a:hover {
-  transform: scale(1.15);
-}
 
 /* ------------------- */
 /* FOOTER */

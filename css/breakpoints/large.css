@@ -54,4 +54,15 @@
   #projects .card {
     margin: 0;
   }
+
+  /* ABOUT SECTION */
+  main #about {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  main #about p {
+    width: 80%;
+  }
+ 
 }

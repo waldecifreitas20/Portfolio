@@ -32,7 +32,6 @@
   /* SERVICES SECTION */
   main #services ul {
     display: grid;
-
     grid-template-areas: "a a" "b b";
   }
 

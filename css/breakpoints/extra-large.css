@@ -2,4 +2,15 @@
   main #projects #projects-cards {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  main #services ul {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 0px;
+  }
+
+  main #services ul li {
+    margin: 0 auto;
+    width: fit-content;
+  }
 }
