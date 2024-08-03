@@ -186,11 +186,11 @@ main #projects {
 }
 
 #projects .card {
-  border: 1px solid rgb(77, 77, 77, .2);
+  border: 1px solid rgb(77, 77, 77, .15);
   border-radius: var(--border-radius);
-  box-shadow: 1px 1px 3px rgba(77, 77, 77, 0.2);
 
   padding: 20px;
+  transition: all 600ms;
 }
 
 .card .project-img {

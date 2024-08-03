@@ -49,6 +49,16 @@
   }
 
   /* HOME SECTION */
+  main #home #btn-top-group {
+    justify-content: center;
+  }
+  main #home #btn-top-group .btn {
+    padding: 15px 0;
+    max-width: 200px;
+    height: fit-content;
+    min-height: 0;
+  }
+
   #introduction #subtitle {
     font-size: 2.8em;
   }
@@ -74,16 +84,11 @@
 
   #projects .card {
     margin: 0;
-    max-width: 300px;
-    /* margin-right: auto; */
+    /* max-width: 300px; */
   }
 
-  #projects .card .card-btn-group {
-    display: flex;
-    flex-direction: column;
-  }
 
-  /* MY skills SECTION */
+  /* MY SKILLS SECTION */
   main #my-skills article {
     grid-template-columns: repeat(5, 1fr);
   }
