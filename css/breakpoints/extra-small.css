@@ -190,7 +190,6 @@ main #projects {
   border-radius: var(--border-radius);
 
   padding: 20px;
-  transition: all 600ms;
 }
 
 .card .project-img {
@@ -218,15 +217,18 @@ main #projects {
 
 .card p {
   font-size: .9em;
-}
-
-.card .card-btn-group {
-  margin-top: 30px;
+  color: var(--color-text);
+  margin-bottom: 40px;
 }
 
 .card .card-btn-group .btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
+
 
 .card .card-btn-group .btn-primary {
   margin-bottom: 10px;

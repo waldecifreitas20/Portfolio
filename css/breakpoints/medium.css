@@ -1,4 +1,5 @@
 @media (min-width: 768px) {
+
   /* RESET MOBILE CLASS */
   .close-menu {
     left: 0;
@@ -31,7 +32,7 @@
     flex-direction: row;
     gap: 50px;
 
-    margin: 0; 
+    margin: 0;
   }
 
   header #top-navbar ul a {
@@ -49,10 +50,11 @@
   }
 
   /* HOME SECTION */
-  main #home #btn-top-group {
+  #home #btn-top-group {
     justify-content: center;
   }
-  main #home #btn-top-group .btn {
+
+  #home #btn-top-group .btn {
     padding: 15px 0;
     max-width: 200px;
     height: fit-content;
@@ -84,7 +86,11 @@
 
   #projects .card {
     margin: 0;
-    /* max-width: 300px; */
+  }
+
+
+  #projects .card span {
+    font-size: .9em;
   }
 
 

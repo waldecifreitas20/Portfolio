@@ -46,6 +46,9 @@
     max-width: 500px;
   }
 
+  #home #btn-top-group {
+    justify-content: left;
+  }
   /* PROJECTS SECTION */
   #projects .card {
     margin: 0;
