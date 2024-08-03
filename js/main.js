@@ -77,9 +77,9 @@ function handleFormSubmit() {
   });
 
   function sendMessage(name, email, message) {
-    const url1 = "https://app-email-sender.fly.dev/send-email";
+    const serverUrl = "https://app-email-sender.fly.dev/send-email";
 
-    fetch(url1, {
+    fetch(serverUrl, {
       headers: {
         'Content-type': 'application/json',
       },
