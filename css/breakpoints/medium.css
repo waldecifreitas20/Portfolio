@@ -83,8 +83,8 @@
     flex-direction: column;
   }
 
-  /* MY STACK SECTION */
-  main #my-stack article {
+  /* MY skills SECTION */
+  main #my-skills article {
     grid-template-columns: repeat(5, 1fr);
   }
 

@@ -35,8 +35,8 @@
     grid-template-areas: "a a" "b b";
   }
 
-  /* MY STACK SECTION */
-  main #my-stack article {
+  /* MY skills SECTION */
+  main #my-skills article {
     grid-template-columns: repeat(4, 1fr);
   }
 

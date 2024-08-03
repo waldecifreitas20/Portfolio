@@ -109,7 +109,7 @@ main #services h2 {
   margin-bottom: 30px;
 }
 
-main #my-stack h2,
+main #my-skills h2,
 main #about h2 {
   margin-bottom: 15px;
 }
@@ -287,15 +287,15 @@ main #services h2 {
   margin-bottom: 10px;
 }
 
-/* MY STACK */
-main #my-stack {
+/* MY skills */
+main #my-skills {
   padding-top: 40px;
   padding-bottom: 80px;
 
   background-color: var(--color-secondary);
 }
 
-main #my-stack article {
+main #my-skills article {
   margin: 0 auto;
   margin-top: 25px;
   display: grid;
@@ -304,7 +304,7 @@ main #my-stack article {
 
 }
 
-#my-stack article img {
+#my-skills article img {
   display: block;
   height: 100px;
   width: 100px;
