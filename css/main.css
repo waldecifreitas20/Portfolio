@@ -19,15 +19,15 @@
 }
 
 :root {
-    --color-primary: #ff3794;
-    --color-primary-hover: #ff45e0;
-    --color-primary-light: #e44af9;
-    --color-secondary: rgb(255, 196, 235);
+    --color-primary: #8c00ff;
+    --color-primary-hover: #9645ff;
+    --color-primary-light: #ee6cff;
+    --color-secondary: rgb(255, 196, 216);
     --color-text: rgb(109, 109, 109);
 
-    --bg-primary: rgba(255, 192, 223, 0.7);
-    --bg-secondary: rgba(230, 130, 172, 0.67);
-    --bg-tertiary: #ffb2f5;
+    --bg-primary: rgba(255, 197, 229, 0.7);
+    --bg-secondary: rgba(215, 167, 255, 0.67);
+    --bg-tertiary: rgb(234, 241, 255);
 
     --border-radius: 8px;
     --box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.35);
