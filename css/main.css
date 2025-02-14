@@ -19,15 +19,15 @@
 }
 
 :root {
-    --color-primary: #8c00ff;
-    --color-primary-hover: #9645ff;
-    --color-primary-light: #ee6cff;
-    --color-secondary: rgb(255, 196, 216);
+    --color-primary: #008cff;
+    --color-primary-hover: #0273cf;
+    --color-primary-light: #63b5f8;
+    --color-secondary: rgb(196, 248, 255);
     --color-text: rgb(109, 109, 109);
 
-    --bg-primary: rgba(255, 197, 229, 0.7);
-    --bg-secondary: rgba(215, 167, 255, 0.67);
-    --bg-tertiary: rgb(234, 241, 255);
+    --bg-primary: rgba(220, 254, 255, 0.7);
+    --bg-secondary: rgba(167, 242, 255, 0.67);
+    --bg-tertiary: rgb(234, 255, 252);
 
     --border-radius: 8px;
     --box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.35);
@@ -91,6 +91,10 @@ body {
 
     cursor: pointer;
     transition: all 500ms;
+
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
 }
 
 .btn:hover {
